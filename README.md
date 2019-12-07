@@ -10,7 +10,7 @@
 ### Probabilistic Generative Model
 1. [李弘毅](https://www.youtube.com/watch?v=fZAZUYEeIMg&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=9)
 2. Xuan
-3. Luo
+3. [Luo](./Luo/Naive_Bayes_2019_1206.ipynb)
 
 ## Week 3
 ### Logistic Regression
