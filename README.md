@@ -3,7 +3,7 @@
 ## Week 1 (2019/11/25 - 2019/12/02)
 ### Gradient Descent
 1. [李弘毅](https://www.youtube.com/watch?v=yKKNr-QKz2Q&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=6)
-2. [Xuan]()
+2. Xuan
 3. [Luo](./Luo/Gradient_Descent_2019_1125.ipynb)
 
 ## Week 2
@@ -16,7 +16,7 @@
 ### Logistic Regression
 1. [李弘毅](https://www.youtube.com/watch?v=hSXFuypLukA&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=10)
 2. Xuan
-3. Luo()
+3. Luo
 
 ## Week 4
 ### Brief Introduction of Deep Learning & Backpropagation
