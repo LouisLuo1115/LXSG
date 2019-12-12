@@ -1,4 +1,4 @@
-# Luo & Xuan Study Group
+# Luo & Xuan Study Group 
 
 ## Week 1 (2019/11/25 - 2019/12/02)
 ### Gradient Descent
