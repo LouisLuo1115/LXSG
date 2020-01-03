@@ -23,7 +23,7 @@
 1. [李弘毅1](https://www.youtube.com/watch?v=Dr-WRlEFefw&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=11)
 2. [李弘毅2](https://www.youtube.com/watch?v=ibJpTrp5mcE&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=12)
 3. Xuan
-4. Luo
+4. [Luo](./Luo/Backpropagation_implement_2020_0103.py)
 
 ## Week 5 
 ### Tips for Training DNN
