@@ -1,5 +1,6 @@
 # Reference: https://medium.com/@a.mirzaei69/implement-a-neural-network-from-scratch-with-python-numpy-backpropagation-e82b70caa9bb
 import numpy as np
+from tqdm import tqdm
 
 
 class NeuralNetwork(object):
@@ -48,17 +49,23 @@ class NeuralNetwork(object):
 
     def train(self, x, y, batch_size=10, epochs=100, lr=0.01):
         # update weights and biases based on the output
-        for e in range(epochs):
-            i = 0
-            while(i < len(y)):
-                x_batch = x[i:i+batch_size]
-                y_batch = y[i:i+batch_size]
-                i = i + batch_size
-                z_s, a_s = self.feedforward(x_batch)
-                dw, db = self.backpropagation(y_batch, z_s, a_s)
-                self.weights = [w+lr*dweight for w, dweight in zip(self.weights, dw)]
-                self.biases = [w+lr*dbias for w, dbias in zip(self.biases, db)]
-                print("loss = {}".format(np.linalg.norm(a_s[-1]-y_batch)))
+        with tqdm(total=epochs) as t:
+            t.set_description('Training Loop')
+            for e in range(epochs):
+                loss_lists = []
+                i = 0
+                while(i < len(y)):
+                    x_batch = x[i:i+batch_size]
+                    y_batch = y[i:i+batch_size]
+                    i = i + batch_size
+                    z_s, a_s = self.feedforward(x_batch)
+                    dw, db = self.backpropagation(y_batch, z_s, a_s)
+                    self.weights = [w+lr*dweight for w, dweight in zip(self.weights, dw)]
+                    self.biases = [w+lr*dbias for w, dbias in zip(self.biases, db)]
+                    loss = np.linalg.norm(a_s[-1]-y_batch)
+                    loss_lists.append(loss)
+                t.update(1)
+                t.set_postfix(loss='%.4f' % np.mean(loss_lists))
 
     @staticmethod
     def getActivationFunction(name):
