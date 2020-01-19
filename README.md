@@ -33,5 +33,6 @@
 
 ## Week 6
 ### Using Pytorch to Implement DNN
-1. Xuan
-2. Luo
+1. [PyTorch Tutorials](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+2. Xuan
+3. Luo
